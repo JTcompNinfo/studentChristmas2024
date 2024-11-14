@@ -1,0 +1,151 @@
+/* CSS Christmas Wishlist */
+
+* {
+    box-sizing: border-box;
+    /* Box Model Fix */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.media-card-1 img,
+.media-card-2 img,
+.media-card-3 img,
+.media-card-4 img,
+.media-card-5 img,
+.media-card-6 img,
+.media-card-7 img,
+.media-card-8 img,
+.media-card-9 img {
+    height: 250px;
+    width: 250px;
+}
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-repeat: none;
+    background-size: cover;
+    min-height: 500px;
+    background-position-y:bottom;
+}
+
+.media-card-1,
+.media-card-2,
+.media-card-3,
+.media-card-4,
+.media-card-5,
+.media-card-6,
+.media-card-7,
+.media-card-8,
+.media-card-9 {
+    margin: 5%;
+}
+
+
+.container {
+    display: grid;
+}
+
+
+/*-------- Tablet Media Query --------*/
+@media screen and (min-width: 769px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .media-card-1 {
+        grid-column: 1/2;
+    }
+
+    .media-card-2 {
+        grid-column: 2/3;
+    }
+
+    .media-card-3 {
+        grid-column: 1/2;
+    }
+
+    .media-card-4 {
+        grid-column: 2/3;
+    }
+
+    .media-card-5 {
+        grid-column: 1/2;
+    }
+
+    .media-card-6 {
+        grid-column: 2/3;
+    }
+
+    .media-card-7 {
+        grid-column: 1/2;
+    }
+
+    .media-card-8 {
+        grid-column: 2/3;
+    }
+
+    .media-card-9 {
+        grid-column: 1/2;
+    }
+
+}
+/*-------- End of Tablet Media Query --------*/
+
+/*-------- Desktop Media Query --------*/
+@media screen and (min-width: 1025px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .media-card-1 {
+        grid-column: 1/2;
+    }
+
+    .media-card-2 {
+        grid-column: 2/3;
+    }
+
+    .media-card-3 {
+        grid-column: 3/4;
+    }
+
+    .media-card-4 {
+        grid-column: 1/2;
+    }
+
+    .media-card-5 {
+        grid-column: 2/3;
+    }
+
+    .media-card-6 {
+        grid-column: 3/4;
+    }
+
+    .media-card-7 {
+        grid-column: 1/2;
+    }
+
+    .media-card-8 {
+        grid-column: 2/3;
+    }
+
+    .media-card-9 {
+        grid-column: 3/4;
+    }
+}
+/*-------- End Desktop Media Query --------*/
+
+/*-------- Large Display Media Query --------*/
+@media screen and (min-width: 1850px) {
+    
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+/*-------- End Large Display Media Query --------*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wishlist</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="hero">
+      
+    </div>
+
+    <div class="container">
+      <div class="media-card-1">
+        <img src="assets/images/Hippo.jpg" id="img">
+      </div>
+
+      <div class="media-card-2">
+        <img src="assets/images/CD-changer.jpg">
+      </div>
+
+      <div class="media-card-3">
+        <img src="assets/images/rubber-duck.jpg">
+      </div>
+
+      <div class="media-card-4">
+
+      </div>
+
+      <div class="media-card-5">
+
+      </div>
+
+      <div class="media-card-6">
+
+      </div>
+
+      <div class="media-card-7">
+
+      </div>
+
+      <div class="media-card-8">
+
+      </div>
+
+      <div class="media-card-9">
+
+      </div>
+    </div>
+    
+    <!--Make the hiipo song play-->
+    <audio id="audio" src="assets/audio/Gayla-Peevey-I-Want-a-Hippopotamus-for-Christmas.mp3"></audio>
+    <script>
+        var audio = document.getElementById("audio");
+        var img = document.getElementById("img");
+        
+        function play() {
+          audio.play();
+        }
+        
+        function stop() {
+          audio.pause();
+        }
+        
+        img.addEventListener('click', play);
+        img.addEventListener('mouseover', play);
+        img.addEventListener('mouseout', stop);
+      </script>
+</body>
+
+</html>
