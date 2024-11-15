@@ -28,15 +28,15 @@
       </div>
 
       <div class="media-card-4">
-
+        <img src="assets/images/4206571959_1535fafe5f_b.jpg">
       </div>
 
       <div class="media-card-5">
-
+        <img src="assets/images/blahaj.png">
       </div>
 
       <div class="media-card-6">
-
+        <img src="assets/images/Ryan.jpeg" id="ryan">
       </div>
 
       <div class="media-card-7">
@@ -52,11 +52,15 @@
       </div>
     </div>
     
-    <!--Make the hiipo song play-->
+    <!--Make songs play when over image-->
     <audio id="audio" src="assets/audio/Gayla-Peevey-I-Want-a-Hippopotamus-for-Christmas.mp3"></audio>
+    <audio src="assets/audio/George-Michael-Careless-Whisper.mp3" id="careless"></audio>
     <script>
         var audio = document.getElementById("audio");
         var img = document.getElementById("img");
+
+        var careless = document.getElementById("careless");
+        var ryan = document.getElementById("ryan");
         
         function play() {
           audio.play();
@@ -69,6 +73,18 @@
         img.addEventListener('click', play);
         img.addEventListener('mouseover', play);
         img.addEventListener('mouseout', stop);
+
+        function play2() {
+          careless.play();
+        }
+        
+        function stop2() {
+          careless.pause();
+        }
+        
+        ryan.addEventListener('click', play2);
+        ryan.addEventListener('mouseover', play2);
+        ryan.addEventListener('mouseout', stop2);
       </script>
 </body>
 

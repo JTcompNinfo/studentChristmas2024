@@ -18,8 +18,7 @@
 .media-card-7 img,
 .media-card-8 img,
 .media-card-9 img {
-    height: 250px;
-    width: 250px;
+    width: 50%;
 }
 
 .hero {
@@ -40,6 +39,7 @@
 .media-card-8,
 .media-card-9 {
     margin: 5%;
+    display: flex;
 }
 
 
