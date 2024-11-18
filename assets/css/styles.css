@@ -19,6 +19,7 @@
 .media-card-8 img,
 .media-card-9 img {
     width: 50%;
+    
 }
 
 .hero {
@@ -40,6 +41,7 @@
 .media-card-9 {
     margin: 5%;
     display: flex;
+    min-height: 200px;
 }
 
 
