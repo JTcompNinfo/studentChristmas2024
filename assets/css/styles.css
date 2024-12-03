@@ -1,5 +1,13 @@
 /* CSS Christmas Wishlist */
 
+/*
+----------------------------Color pallet----------------------------
+Silver - #D8DBDE
+Gold - #EEC900
+Blue - #7DF9FF	
+
+*/
+
 * {
     box-sizing: border-box;
     /* Box Model Fix */
@@ -8,19 +16,25 @@
     border: 0;
 }
 
+/*make nav stay in place*/
+nav,
+.navbar {
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+    width: 100%;
+    z-index: 5;
+}
 
-.media-card-1 img,
-.media-card-2 img,
-.media-card-3 img,
-.media-card-4 img,
-.media-card-5 img,
-.media-card-6 img,
-.media-card-7 img,
-.media-card-8 img,
-.media-card-9 img {
-    width: 50%;
+
+.card img {
+    height: 100px;
+    width: 100%;
+    min-height: 200px;
     
 }
+
+
 
 .hero {
     background-image: url(../images/hero.jpg);
@@ -45,7 +59,7 @@
 }
 
 
-.container {
+.container1 {
     display: grid;
 }
 
@@ -53,7 +67,7 @@
 /*-------- Tablet Media Query --------*/
 @media screen and (min-width: 769px) {
 
-    .container {
+    .container1 {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -99,7 +113,7 @@
 /*-------- Desktop Media Query --------*/
 @media screen and (min-width: 1025px) {
 
-    .container {
+    .container1 {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
