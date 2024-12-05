@@ -5,8 +5,35 @@
 Silver - #D8DBDE
 Gold - #EEC900
 Blue - #7DF9FF	
-
+Red - #B00B0B
+Green - #7D
 */
+body {
+
+    background-color:#087002 ;
+}
+
+nav,
+.navbar,
+.navbar-nav,
+.navbar .container-fluid,
+.bg-body-tertiary,
+.navbar-expand-lg {
+    background-color:#D8DBDE !important;
+    border-color:#D8DBDE !important; 
+}
+
+.card {
+    background-color:#EEC900 ;
+    border-color:#D8DBDE;
+}
+
+.btn,
+.btn-primary {
+    background-color:#B00B0B ;
+    color:#7DF9FF ;
+    border-color:#B00B0B
+}
 
 * {
     box-sizing: border-box;
