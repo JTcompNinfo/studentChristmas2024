@@ -7,11 +7,11 @@ Silver - #D8DBDE
 Gold - #EEC900
 Blue - #7DF9FF	
 Red - #B00B0B
-Green - #7D
+Green - #087002
 */
 body {
 
-    background-color:#087002 ;
+    background-color:#B00B0B ;
 }
 
 nav,
@@ -34,6 +34,20 @@ nav,
     background-color:#B00B0B ;
     color:#7DF9FF ;
     border-color:#B00B0B
+}
+
+.btn,
+.btn-primary {
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+
+
+.btn:hover,
+.btn-primary:hover {
+    background-color:#087002;
+    color:black;
+    border-color: #087002;
 }
 
 * {
@@ -91,9 +105,91 @@ nav,
     display: grid;
 }
 
+.img-hold {
+    margin: 2%;
+    min-height: 250px;
+    min-width: 50%;
+}
+
+.img-hold img {
+    max-height: 250px;
+
+}
+
+/*===================*/
+/* BOB
+/*===================*/
+
+@-webkit-keyframes bob-on-hover {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes bob-on-hover {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes bob-on-hover-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes bob-on-hover-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  .bob-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
+    -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+    animation-name: bob-on-hover-float, bob-on-hover;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+
+
 
 /*-------- Tablet Media Query --------*/
 @media screen and (min-width: 769px) {
+
+    /*----------- home page -----------*/
 
     .container1 {
         grid-template-columns: 1fr 1fr;
@@ -135,11 +231,28 @@ nav,
         grid-column: 1/2;
     }
 
+    /*----------- home page end -----------*/
+
+
+    .img-hold {
+        grid-column: 1/2;
+    }
+
+    .header {
+        grid-column: 2/3;
+    }
+
+    .content {
+        grid-column: 1/3;
+    }
+
 }
 /*-------- End of Tablet Media Query --------*/
 
 /*-------- Desktop Media Query --------*/
 @media screen and (min-width: 1025px) {
+
+    /*----------- home page -----------*/
 
     .container1 {
         grid-template-columns: 1fr 1fr 1fr;
@@ -180,16 +293,33 @@ nav,
     .media-card-9 {
         grid-column: 3/4;
     }
-}
-/*-------- End Desktop Media Query --------*/
 
-/*-------- Large Display Media Query --------*/
-@media screen and (min-width: 1850px) {
-    
-    .nav {
-        flex-direction: row;
-        justify-content: space-between;
+    /*----------- home page end -----------*/
+
+
+    .img-hold {
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
 
+    .header {
+        grid-column: 2/4;
+    }
+
+    .content {
+        grid-column: 2/4;
+        grid-row: 2/4;
+    }
+
+
+    
 }
-/*-------- End Large Display Media Query --------*/
+/*-------- End Desktop Media Query --------*/
+.copy {
+margin-top: 0;
+padding-left: 20%;
+padding-right: 20%;
+padding-top: 10%;
+padding-bottom: 10%;
+min-height: 300px;
+}
