@@ -1,4 +1,10 @@
 /* CSS Christmas Wishlist */
+
+/*Fonts
+font-family: "Snowburst One", serif;
+font-family: "Mountains of Christmas", serif;
+font-family: "Grenze Gotisch", serif;
+*/
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Mountains+of+Christmas:wght@400;700&family=Snowburst+One&display=swap');
 
 /*
@@ -22,11 +28,17 @@ nav,
 .navbar-expand-lg {
     background-color:#D8DBDE !important;
     border-color:#D8DBDE !important; 
+    font-family: "Grenze Gotisch", serif !important;
+    
+
 }
+
+
 
 .card {
     background-color:#EEC900 ;
     border-color:#D8DBDE;
+    font-family: "Snowburst One", serif;
 }
 
 .btn,
@@ -109,11 +121,40 @@ nav,
     margin: 2%;
     min-height: 250px;
     min-width: 50%;
+    max-width:50%;
 }
 
 .img-hold img {
     max-height: 250px;
+    max-width: 150%;
 
+}
+
+.round-button-my {
+    border-radius: 2em;
+    background-color: #B00B0B;
+    color: #EEC900;
+    transition: color 0.5s;
+
+}
+
+.round-button-my:hover {
+    color:#D8DBDE;
+}
+.header {
+    font-family: "Mountains of Christmas", serif;
+    color: #EEC900;
+}
+
+.content {
+    font-family: "Snowburst One", serif;
+}
+
+p {
+    color: #EEC900;
+    padding: 1%;
+    border:1px solid;
+    border-color: #EEC900;
 }
 
 /*===================*/
@@ -317,9 +358,11 @@ nav,
 /*-------- End Desktop Media Query --------*/
 .copy {
 margin-top: 0;
-padding-left: 20%;
-padding-right: 20%;
+justify-content: center;
+text-align: center;
 padding-top: 10%;
 padding-bottom: 10%;
 min-height: 300px;
+font-family: "Mountains of Christmas", serif;
+background-color: #D8DBDE;
 }
