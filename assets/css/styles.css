@@ -41,25 +41,38 @@ nav,
     font-family: "Snowburst One", serif;
 }
 
-.btn,
+
 .btn-primary {
     background-color:#B00B0B ;
     color:#7DF9FF ;
     border-color:#B00B0B
 }
 
-.btn,
+
 .btn-primary {
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
+.btn-secondary {
+    background-color: #EEC900;
+    border-color: #EEC900;
+    color: #087002;
+}
 
 
-.btn:hover,
-.btn-primary:hover {
+
+.btn-primary:hover,
+.btn-primary:active {
     background-color:#087002;
     color:black;
     border-color: #087002;
+}
+
+.btn-secondary:hover, 
+.btn-secondary:active {
+    background-color: #EEC900;
+    border-color: #EEC900;
+    color: #087002;
 }
 
 * {
@@ -119,14 +132,9 @@ nav,
 
 .img-hold {
     margin: 2%;
-    min-height: 250px;
+    margin-right: 10%;
+    min-height: 200%;
     min-width: 50%;
-    max-width:50%;
-}
-
-.img-hold img {
-    max-height: 250px;
-    max-width: 150%;
 
 }
 
@@ -152,10 +160,69 @@ nav,
 
 p {
     color: #EEC900;
-    padding: 1%;
+    margin: 1%;
+    text-indent: 2em;
+}
+
+.border-my {
     border:1px solid;
     border-color: #EEC900;
 }
+
+.hip-img {
+    background-image: url(../images/Hippo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cd-img {
+    background-image: url(../images/CD-changer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.duck-img {
+    background-image: url(../images/rubber-duck.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.guide-img {
+    background-image: url(../images/4206571959_1535fafe5f_b.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shark-img {
+    background-image: url(../images/blahaj.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ryan-img {
+    background-image: url(../images/Ryan.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.among-img {
+    background-image: url(../images/Among_Us_cover_art.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nintendo-img {
+    background-image: url(../images/Nintendo.svg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sab-img {
+    background-image: url(../images/6256511314_5976bf4759_4k.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /*===================*/
 /* BOB
@@ -357,7 +424,7 @@ p {
 }
 /*-------- End Desktop Media Query --------*/
 .copy {
-margin-top: 0;
+margin-top: 10%;
 justify-content: center;
 text-align: center;
 padding-top: 10%;
